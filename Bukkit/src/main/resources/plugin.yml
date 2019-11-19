@@ -1,0 +1,22 @@
+main: me.joeleoli.portal.bukkit.Portal
+name: Portal
+version: ${project.version}
+author: joeleoli, DaddyImPregnant
+description: ${project.description}
+commands:
+  joinqueue:
+    description: Join a queue
+  leavequeue:
+    description: Leave a queue
+  forcesend:
+    description: Send a player to a server
+  datadump:
+    description: Dump data
+  queuetoggle:
+    description: Toggle a queue
+  queueclear:
+    description: Clear a queue
+  queuemenu:
+    description: Opens queue management GUI
+  hub:
+    description: Sends a player to the hub

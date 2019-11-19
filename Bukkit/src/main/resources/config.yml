@@ -1,0 +1,27 @@
+server:
+  id: hub-01
+  hub: false
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+priority:
+  default: 1
+  ranks:
+    Default:
+      priority: 1
+      permission: "ranks.default"
+    VIP:
+      priority: 2
+      permission: "ranks.vip"
+    MVP:
+      priority: 3
+      permission: "ranks.mvp"
+language:
+  reminder:
+    - "&eYou are position &d#{position} &eof &d{total} &ein the &a{queue} &equeue."
+    - "&7Purchase a rank at www.server.net to get a higher queue priority."
+  added:
+    - "&aYou have joined the {queue} queue."
+  removed:
+    - "&cYou have been removed from the {queue} queue."
