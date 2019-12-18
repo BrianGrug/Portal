@@ -25,3 +25,7 @@ language:
     - "&aYou have joined the {queue} queue."
   removed:
     - "&cYou have been removed from the {queue} queue."
+  permission:
+    - "&cNo permission."
+commands:
+  hub: true

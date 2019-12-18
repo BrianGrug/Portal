@@ -171,8 +171,7 @@ public class PortalSubscriptionHandler implements JedisSubscriptionHandler {
                     responseData.addProperty("uuid", uuid);
                     responseData.addProperty("message", "&cThere are no hubs to send you to.");
 
-                    Portal.getInstance().getPublisher().write(JedisChannel.BUKKIT, JedisAction.MESSAGE_PLAYER,
-                            responseData);
+                    Portal.getInstance().getPublisher().write(JedisChannel.BUKKIT, JedisAction.MESSAGE_PLAYER, responseData);
                 } else {
                     JsonObject responseData = new JsonObject();
                     responseData.addProperty("uuid", uuid);

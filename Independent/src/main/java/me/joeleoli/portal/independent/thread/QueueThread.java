@@ -15,7 +15,7 @@ public class QueueThread extends Thread {
 
     @Override
     public void run() {
-        while (true) {
+        while (Portal.getInstance().threads) {
             for (Queue queue : Queue.getQueues()) {
                 ServerData serverData = queue.getServerData();
 

@@ -3,7 +3,7 @@ package me.joeleoli.portal.bukkit.util;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
 import me.joeleoli.portal.bukkit.Portal;
-import org.apache.commons.lang3.Validate;
+import org.apache.commons.lang.Validate;
 import org.bukkit.entity.Player;
 
 public final class BungeeUtil {
@@ -13,7 +13,8 @@ public final class BungeeUtil {
 	}
 
 	public static void sendToServer(Player player, String server) {
-		Validate.notNull(player, server, "Input values cannot be null!");
+		Validate.notNull(player,  "Input values cannot be null!");
+		Validate.notNull(server,  "Input values cannot be null!");
 
 		try {
 			ByteArrayDataOutput out = ByteStreams.newDataOutput();

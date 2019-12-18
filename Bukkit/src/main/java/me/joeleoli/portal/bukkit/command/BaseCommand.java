@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 
 public abstract class BaseCommand implements CommandExecutor {
 
-    protected static final String NO_PERMISSION = ChatColor.RED + "No permission.";
+    protected static final String NO_PERMISSION = Portal.getInstance().getLanguage().getPermission();
     protected static final String CONSOLE_SENDER = ChatColor.RED + "This command can only be peformed in-game.";
 
     public BaseCommand(String name) {
@@ -20,5 +20,4 @@ public abstract class BaseCommand implements CommandExecutor {
         commandSender.sendMessage("Command not handled");
         return true;
     }
-
 }

@@ -81,7 +81,10 @@ public class Portal extends JavaPlugin {
         new DataDumpCommand();
         new QueueToggleCommand();
         new QueueClearCommand();
-        new HubCommand();
+        new StatusCommand();
+        if(getConfig().getBoolean("commands.hub")) {
+            new HubCommand();
+        }
 
         // Register listeners
         this.getServer().getPluginManager().registerEvents(new PlayerListener(), this);

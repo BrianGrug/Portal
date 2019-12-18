@@ -22,6 +22,9 @@ public class Language {
     private List<String> removed = Arrays.asList(
             "&cYou have been removed from the {queue} queue."
     );
+    private List<String> permission = Arrays.asList(
+            "&cNo permission."
+    );
 
     public void load() {
         FileConfiguration config = Portal.getInstance().getMainConfig().getConfig();
@@ -36,6 +39,9 @@ public class Language {
 
         if (config.contains("language.removed")) {
             this.removed = config.getStringList("language.removed");
+        }
+        if (config.contains("language.permission")) {
+            this.permission = config.getStringList("language.permission");
         }
     }
 
@@ -79,4 +85,10 @@ public class Language {
         return translated;
     }
 
+    public String getPermission() {
+        for (String line : this.permission) {
+            return ChatColor.translateAlternateColorCodes('&', line);
+        }
+        return null;
+    }
 }

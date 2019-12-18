@@ -6,6 +6,7 @@ import me.joeleoli.portal.shared.server.ServerData;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 
 public class StatusCommand extends BaseCommand {
 
@@ -16,8 +17,12 @@ public class StatusCommand extends BaseCommand {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
 
-        if(!commandSender.hasPermission("portal.status")){
+        if (!commandSender.hasPermission("portal.status")) {
             commandSender.sendMessage(NO_PERMISSION);
+            return true;
+        }
+        if (commandSender instanceof ConsoleCommandSender) {
+            commandSender.sendMessage(CONSOLE_SENDER);
             return true;
         }
         if (args.length == 0) {
@@ -25,9 +30,10 @@ public class StatusCommand extends BaseCommand {
             return true;
         }
         Queue queue = Queue.getByName(args[0]);
-        ServerData serverData = queue.getServerData();
 
-        commandSender.sendMessage("");
+        commandSender.sendMessage(ChatColor.YELLOW + "Status » " + queue.serverStatus());
+        commandSender.sendMessage(ChatColor.YELLOW + "Players » " + ChatColor.GREEN + queue.getServerData().getOnlinePlayers() + "/" + queue.getServerData().getMaximumPlayers());
+        commandSender.sendMessage(ChatColor.YELLOW + "Queue Status » " + queue.statusString());
         return true;
     }
 }

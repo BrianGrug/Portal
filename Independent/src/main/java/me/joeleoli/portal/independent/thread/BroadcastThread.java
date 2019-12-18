@@ -14,7 +14,7 @@ public class BroadcastThread extends Thread {
 
     @Override
     public void run() {
-        while (true) {
+        while (Portal.getInstance().threads) {
             JsonArray queues = new JsonArray();
 
             for (Queue queue : Queue.getQueues()) {

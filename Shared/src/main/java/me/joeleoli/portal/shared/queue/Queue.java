@@ -1,6 +1,5 @@
 package me.joeleoli.portal.shared.queue;
 
-import com.google.gson.JsonObject;
 import me.joeleoli.portal.shared.jedis.*;
 import me.joeleoli.portal.shared.server.ServerData;
 import lombok.Getter;
@@ -34,7 +33,7 @@ public class Queue {
     }
 
     public String serverStatus(){
-        return getServerData().isOnline()? ChatColor.GREEN + "Online" : getServerData().isWhitelisted()? ChatColor.WHITE + "Whitelisted" : ChatColor.RED + "Offline";
+        return getServerData().isOnline() && !getServerData().isWhitelisted() ? ChatColor.GREEN + "Online" : getServerData().isWhitelisted() ? ChatColor.WHITE + "Whitelisted" : ChatColor.RED + "Offline";
     }
 
     public ServerData getServerData() {

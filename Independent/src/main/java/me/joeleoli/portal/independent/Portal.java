@@ -5,6 +5,7 @@ import me.joeleoli.portal.independent.jedis.PortalSubscriptionHandler;
 import me.joeleoli.portal.independent.log.Logger;
 import me.joeleoli.portal.independent.thread.BroadcastThread;
 import me.joeleoli.portal.independent.thread.QueueThread;
+import me.joeleoli.portal.independent.thread.RedisClearThread;
 import me.joeleoli.portal.shared.jedis.JedisChannel;
 import me.joeleoli.portal.shared.jedis.JedisPublisher;
 import me.joeleoli.portal.shared.jedis.JedisSettings;
@@ -23,6 +24,8 @@ public class Portal {
 
     private JedisSubscriber subscriber;
     private JedisPublisher publisher;
+
+    public boolean threads = true;
 
     private Portal() {
 
@@ -50,6 +53,7 @@ public class Portal {
 
         new QueueThread().start();
         new BroadcastThread().start();
+        new RedisClearThread().start();
 
         Logger.print("Portal is now running...");
 
@@ -58,6 +62,7 @@ public class Portal {
             public void run() {
                 if (!settings.getJedisPool().isClosed()) {
                     settings.getJedisPool().close();
+                    threads = false;
                 }
             }
         });
