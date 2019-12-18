@@ -32,3 +32,12 @@ Players that have the `portal.bypass` permission will immediately be sent to a s
 Installation is pretty straight forward, follow my steps and you'll have Portal running in no time!
 
 First, open CMD or Terminal, depending on your OS and create a folder. Go to that folder and place portal-independent in the folder. Then run ``java -jar portal-independent.jar``. Once that's finished, use screen to exit, that way the independent module stays running in the background. Then, place portal-bukkit on all servers except proxy. Now on to configuration. Open the folder containing portal-independent, and open the config.properties. Then, configure it accordingly, restart the independent module and you're done with the independent module! Now, open the bukkit configuration in the plugins folder and configure it accordingly, reboot and bam! It's all setup and ready for players!
+
+## API
+|Method          |Input                         |Return Value                            |
+|----------------|------------------------------|----------------------------------------|
+|statusString()  |Server name (String)          |Server status (String)                  |
+|getServerData() |Server name (String)          |Gets server & it's data (N/A)           |
+|containsPlayer()|UUID (UUID)                   |Checks if a players in a queue (Boolean)|
+|getPosition()   |UUID (UUID)                   |Gets players queue position (int)       |
+|sendPlayer()    |Player (Player), Queue (Queue)|Sends a player (N/A)
