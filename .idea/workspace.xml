@@ -155,10 +155,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fixed the description of the plugin." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2" timestamp="1576774782721">
+    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2" timestamp="1576775445794">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
-    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2/0.27.1280.997@0.27.1280.997" timestamp="1576774782721" />
+    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2/0.27.1280.997@0.27.1280.997" timestamp="1576775445794" />
+    <state width="1234" height="236" key="GridCell.Tab.0.bottom" timestamp="1576775554999">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state width="1234" height="236" key="GridCell.Tab.0.bottom/0.27.1280.997@0.27.1280.997" timestamp="1576775554999" />
+    <state width="1234" height="236" key="GridCell.Tab.0.center" timestamp="1576775554999">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state width="1234" height="236" key="GridCell.Tab.0.center/0.27.1280.997@0.27.1280.997" timestamp="1576775554999" />
+    <state width="1234" height="236" key="GridCell.Tab.0.left" timestamp="1576775554998">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state width="1234" height="236" key="GridCell.Tab.0.left/0.27.1280.997@0.27.1280.997" timestamp="1576775554998" />
+    <state width="1234" height="236" key="GridCell.Tab.0.right" timestamp="1576775554999">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state width="1234" height="236" key="GridCell.Tab.0.right/0.27.1280.997@0.27.1280.997" timestamp="1576775554999" />
     <state x="53" y="152" width="1198" height="730" key="SettingsEditor" timestamp="1576701047262">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
