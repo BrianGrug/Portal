@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55df27a-5f63-4a7b-a463-200726eafab0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bukkit/src/main/java/me/joeleoli/portal/bukkit/jedis/PortalSubscriptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bukkit/src/main/java/me/joeleoli/portal/bukkit/jedis/PortalSubscriptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,26 +132,41 @@
       <option name="project" value="LOCAL" />
       <updated>1576771045892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed the description of the plugin.">
+      <created>1576771697797</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576771697797</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed the description of the plugin.">
+      <created>1576774782772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576774782772</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed some null issues and cleaned some code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some null issues and cleaned some code." />
+    <MESSAGE value="Fixed the description of the plugin." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the description of the plugin." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2" timestamp="1576771045568">
+    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2" timestamp="1576774782721">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
-    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2/0.27.1280.997@0.27.1280.997" timestamp="1576771045568" />
+    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2/0.27.1280.997@0.27.1280.997" timestamp="1576774782721" />
     <state x="53" y="152" width="1198" height="730" key="SettingsEditor" timestamp="1576701047262">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
     <state x="53" y="152" width="1198" height="730" key="SettingsEditor/0.27.1280.997@0.27.1280.997" timestamp="1576701047262" />
-    <state x="235" y="242" width="800" height="565" key="Vcs.Push.Dialog.v2" timestamp="1576771054639">
+    <state x="235" y="242" width="800" height="565" key="Vcs.Push.Dialog.v2" timestamp="1576774784137">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
-    <state x="235" y="242" width="800" height="565" key="Vcs.Push.Dialog.v2/0.27.1280.997@0.27.1280.997" timestamp="1576771054639" />
+    <state x="235" y="242" width="800" height="565" key="Vcs.Push.Dialog.v2/0.27.1280.997@0.27.1280.997" timestamp="1576774784137" />
     <state x="406" y="439" width="457" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576739788917">
       <screen x="0" y="27" width="1280" height="997" />
     </state>

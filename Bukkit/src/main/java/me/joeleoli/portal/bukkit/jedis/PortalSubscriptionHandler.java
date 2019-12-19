@@ -157,7 +157,6 @@ public class PortalSubscriptionHandler implements JedisSubscriptionHandler {
                 }
 
                 player.sendMessage(ChatColor.GREEN + "Sending you to " + server);
-                System.out.println("Server:" + server + " User:" + player.getName());
                 BungeeUtil.sendToServer(player, server);
             }
             break;
