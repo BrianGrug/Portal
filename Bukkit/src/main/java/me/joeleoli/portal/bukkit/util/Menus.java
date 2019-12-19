@@ -15,13 +15,11 @@ public class Menus {
     public String statusString(String server){
         Queue queue = Queue.getByName(server);
 
+        if(queue == null) {
+            return ChatColor.RED + "This queue does not exist";
+        }
+
         return queue.isEnabled() ? ChatColor.GREEN + "This queue is available" : ChatColor.RED + "This queue is unavailable";
-    }
-
-    public void queueMenu(Player player) {
-        inv = Bukkit.createInventory(null, 18, "Queue Manager");
-
-        inv.setItem(12, new ItemBuilder(Material.EMERALD_BLOCK).setDisplayName(ChatColor.GREEN + "Queue status'").create());
     }
 
     public void queueStatusMenu(Player player){

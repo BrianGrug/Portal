@@ -47,7 +47,7 @@ public class Config {
             this.hubs = ((String) prop.getOrDefault("hubs", "")).split(",");
             this.queues = ((String) prop.getOrDefault("queues", "")).split(",");
             this.redisHost = ((String) prop.getOrDefault("redis-host", "127.0.0.1"));
-            this.redisPort = Integer.valueOf((String) prop.getOrDefault("redis-port", "6379"));
+            this.redisPort = Integer.parseInt((String) prop.getOrDefault("redis-port", "6379"));
             this.redisPassword = ((String) prop.getOrDefault("redis-password", ""));
             this.delay = Double.parseDouble((String) prop.getOrDefault("send-delay", ("0.5")));
             System.out.println("Delay 1: " + delay);

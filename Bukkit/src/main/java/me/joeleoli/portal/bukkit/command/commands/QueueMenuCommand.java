@@ -2,7 +2,6 @@ package me.joeleoli.portal.bukkit.command.commands;
 
 import me.joeleoli.portal.bukkit.Portal;
 import me.joeleoli.portal.bukkit.command.BaseCommand;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
