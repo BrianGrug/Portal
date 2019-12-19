@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c55df27a-5f63-4a7b-a463-200726eafab0" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="c55df27a-5f63-4a7b-a463-200726eafab0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,41 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/ProPractice" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -26,26 +65,24 @@
     </option>
   </component>
   <component name="ProjectId" id="1TRlmQ5vSH8pecNlWEOnuYKEod2" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/pom.xml&#10;C:/Users/Bryeguy527/Desktop/Portal-master/Shared/pom.xml&#10;C:/Users/Bryeguy527/Desktop/Portal-master/Independent/pom.xml&#10;C:/Users/Bryeguy527/Desktop/Portal-master/Bukkit/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="discord-application" />
   </component>
   <component name="RunManager">
     <configuration name="Portal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -67,6 +104,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -78,6 +127,36 @@
       <option name="presentableId" value="Default" />
       <updated>1561685820829</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixed some null issues and cleaned some code.">
+      <created>1576771045892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576771045892</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed some null issues and cleaned some code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some null issues and cleaned some code." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2" timestamp="1576771045568">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state x="244" y="33" width="781" height="982" key="CommitChangelistDialog2/0.27.1280.997@0.27.1280.997" timestamp="1576771045568" />
+    <state x="53" y="152" width="1198" height="730" key="SettingsEditor" timestamp="1576701047262">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state x="53" y="152" width="1198" height="730" key="SettingsEditor/0.27.1280.997@0.27.1280.997" timestamp="1576701047262" />
+    <state x="235" y="242" width="800" height="565" key="Vcs.Push.Dialog.v2" timestamp="1576771054639">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state x="235" y="242" width="800" height="565" key="Vcs.Push.Dialog.v2/0.27.1280.997@0.27.1280.997" timestamp="1576771054639" />
+    <state x="406" y="439" width="457" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576739788917">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state x="406" y="439" width="457" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1280.997@0.27.1280.997" timestamp="1576739788917" />
   </component>
 </project>

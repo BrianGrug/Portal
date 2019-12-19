@@ -8,6 +8,7 @@
     <artifactId>portal</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <description>A simple queue system.</description>
 
     <modules>
         <module>Independent</module>
