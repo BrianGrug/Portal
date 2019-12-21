@@ -47,13 +47,13 @@ public class Language {
             "&eQueue Status » "
     );
     private List<String> online = Arrays.asList(
-            "&aOnline."
+            "&aOnline"
     );
     private List<String> whitelisted = Arrays.asList(
-            "&fWhitelisted."
+            "&fWhitelisted"
     );
     private List<String> offline = Arrays.asList(
-            "&cOffline."
+            "&cOffline"
     );
 
     public void load() {
@@ -74,7 +74,7 @@ public class Language {
             this.permission = config.getStringList("language.permission");
         }
         if (config.contains("language.queuemenu.title")) {
-            this.title = config.getStringList("language.queuemenu.serverstatus");
+            this.title = config.getStringList("language.queuemenu.title");
         }
         if (config.contains("language.queuemenu.queuename")) {
             this.queuename = config.getStringList("language.queuemenu.queuename");
@@ -176,8 +176,8 @@ public class Language {
 
     public String getPlayercount(Queue queue) {
         for(String line : this.playercount) {
-            return ChatColor.translateAlternateColorCodes('&', line)
-                    .replace("{online}", String.valueOf(queue.getServerData().getOnlinePlayers())
+            return ChatColor.translateAlternateColorCodes('&', line
+                    .replace("{online}", String.valueOf(queue.getServerData().getOnlinePlayers()))
                     .replace("{max}", String.valueOf(queue.getServerData().getMaximumPlayers())));
         }
         return null;

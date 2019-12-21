@@ -13,7 +13,7 @@ public class UpdateThread extends Thread {
             Portal.getInstance().getPublisher().write(JedisChannel.BUKKIT, JedisAction.UPDATE, Portal.getInstance().getPortalServer().getServerData());
 
             try {
-                Thread.sleep(2500L);
+                Thread.sleep(15000L);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

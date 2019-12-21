@@ -41,7 +41,7 @@ public class Menus {
                 }
                 if (queue.getServerData().isOnline() & queue.getServerData().isWhitelisted()) {
                     inv.addItem(new ItemBuilder(Material.QUARTZ_BLOCK)
-                            .addLore(l.getServerstatus() + l.getOffline(),
+                            .addLore(l.getServerstatus() + l.getWhitelisted(),
                                     l.getServerplayers() + l.getPlayercount(queue),
                                     l.getQueuestatus() + queue.statusString())
                             .setDisplayName(ChatColor.WHITE + l.getQueuename(queue))
@@ -51,7 +51,7 @@ public class Menus {
             }
             if (queue.getServerData() == null || !queue.getServerData().isOnline()) {
                 inv.addItem(new ItemBuilder(Material.REDSTONE_BLOCK)
-                        .addLore(l.getServerstatus() + l.getOnline(),
+                        .addLore(l.getServerstatus() + l.getOffline(),
                                 l.getServerplayers() + l.getNoplayers(),
                                 l.getQueuestatus() + queue.statusString())
                         .setDisplayName(ChatColor.RED + l.getQueuename(queue))

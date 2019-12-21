@@ -53,7 +53,7 @@ public class Portal {
 
         new QueueThread().start();
         new BroadcastThread().start();
-        new RedisClearThread().start();
+        //new RedisClearThread().start();
 
         Logger.print("Portal is now running...");
 

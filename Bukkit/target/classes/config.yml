@@ -25,3 +25,28 @@ language:
     - "&aYou have joined the {queue} queue."
   removed:
     - "&cYou have been removed from the {queue} queue."
+  permission:
+    - "&cNo permission."
+  queuemenu:
+    title:
+      - "Queue Status"
+    queuename:
+      - "&a{queue}"
+    serverstatus:
+      - "&eStatus » "
+    serverplayers:
+      - "&ePlayers » "
+    playercount:
+      - "&a{online}/{max}"
+    noplayers:
+      - "&c0/0"
+    queuestatus:
+      - "&eQueue Status » "
+    online:
+      - "&aOnline."
+    whitelisted:
+      - "&fWhitelisted."
+    offline:
+      - "Offline."
+commands:
+  hub: true

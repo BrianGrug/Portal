@@ -10,16 +10,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <description>A simple queue system.</description>
+    <description>A multi-proxy player queue.</description>
 
     <artifactId>bukkit</artifactId>
-
-    <repositories>
-        <repository>
-            <id>md5-repo</id>
-            <url>http://repo.md-5.net/content/groups/public/</url>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>

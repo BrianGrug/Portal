@@ -20,3 +20,5 @@ commands:
     description: Opens queue management GUI
   hub:
     description: Sends a player to the hub
+  status:
+    description: Gives server status

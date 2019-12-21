@@ -25,7 +25,7 @@ public class ServerData {
     }
 
     public boolean isOnline() {
-        return System.currentTimeMillis() - this.lastUpdate < 15000L;
+        return System.currentTimeMillis() - this.lastUpdate < 25000L;
     }
 
     @Override

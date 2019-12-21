@@ -51,9 +51,6 @@ public class PortalSubscriptionHandler implements JedisSubscriptionHandler {
             }
             break;
             case LIST: {
-                if (!Portal.getInstance().getPortalServer().isHub()) {
-                    return;
-                }
 
                 for (JsonElement e : data.get("queues").getAsJsonArray()) {
                     final JsonObject queueJson = e.getAsJsonObject();
