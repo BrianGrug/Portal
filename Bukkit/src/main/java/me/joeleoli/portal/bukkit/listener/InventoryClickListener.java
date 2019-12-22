@@ -1,7 +1,6 @@
 package me.joeleoli.portal.bukkit.listener;
 
 import com.google.gson.JsonObject;
-import lombok.NonNull;
 import me.joeleoli.portal.bukkit.Portal;
 import me.joeleoli.portal.shared.jedis.JedisAction;
 import me.joeleoli.portal.shared.jedis.JedisChannel;
@@ -25,7 +24,9 @@ public class InventoryClickListener implements Listener {
 
             Queue queue = Queue.getByName(ChatColor.stripColor(event.getCurrentItem().getItemMeta().getDisplayName()));
 
-            queue.setEnabled(!queue.isEnabled());
+            if (queue != null) {
+                queue.setEnabled(!queue.isEnabled());
+            }
 
             JsonObject json = new JsonObject();
             json.addProperty("queue", queue.getName());

@@ -22,17 +22,17 @@ public class DataDumpCommand extends BaseCommand {
         commandSender.sendMessage("Servers:");
 
         for (ServerData serverData : ServerData.getServers()) {
-            StringBuilder builder = new StringBuilder("- ")
-                    .append(serverData.getName())
-                    .append(" (")
-                    .append(serverData.isOnline())
-                    .append(") (")
-                    .append(serverData.getOnlinePlayers())
-                    .append("/")
-                    .append(serverData.getMaximumPlayers())
-                    .append(")");
 
-            commandSender.sendMessage(builder.toString());
+            String builder = "- " +
+                    serverData.getName() +
+                    " (" +
+                    serverData.isOnline() +
+                    ") (" +
+                    serverData.getOnlinePlayers() +
+                    "/" +
+                    serverData.getMaximumPlayers() +
+                    ")";
+            commandSender.sendMessage(builder);
         }
 
         commandSender.sendMessage("Queues:");

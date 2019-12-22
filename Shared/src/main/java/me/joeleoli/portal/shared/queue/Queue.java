@@ -29,7 +29,7 @@ public class Queue {
     }
 
     public String statusString(){
-        return enabled? ChatColor.GREEN + "Active" : ChatColor.RED + "Disabled";
+        return enabled ? ChatColor.GREEN + "Active" : ChatColor.RED + "Disabled";
     }
 
     public String serverStatus(){

@@ -51,9 +51,6 @@ public class PortalSubscriptionHandler implements JedisSubscriptionHandler {
             }
             break;
             case LIST: {
-                if (!Portal.getInstance().getPortalServer().isHub()) {
-                    return;
-                }
 
                 for (JsonElement e : data.get("queues").getAsJsonArray()) {
                     final JsonObject queueJson = e.getAsJsonObject();
@@ -157,7 +154,6 @@ public class PortalSubscriptionHandler implements JedisSubscriptionHandler {
                 }
 
                 player.sendMessage(ChatColor.GREEN + "Sending you to " + server);
-                System.out.println("Server:" + server + " User:" + player.getName());
                 BungeeUtil.sendToServer(player, server);
             }
             break;

@@ -1,8 +1,8 @@
-me\joeleoli\portal\independent\jedis\PortalSubscriptionHandler$1.class
-me\joeleoli\portal\independent\jedis\PortalSubscriptionHandler.class
-me\joeleoli\portal\independent\Portal.class
-me\joeleoli\portal\independent\Portal$1.class
-me\joeleoli\portal\independent\file\Config.class
-me\joeleoli\portal\independent\thread\QueueThread.class
-me\joeleoli\portal\independent\thread\BroadcastThread.class
-me\joeleoli\portal\independent\log\Logger.class
+me/joeleoli/portal/independent/thread/BroadcastThread.class
+me/joeleoli/portal/independent/jedis/PortalSubscriptionHandler.class
+me/joeleoli/portal/independent/thread/RedisClearThread.class
+me/joeleoli/portal/independent/thread/QueueThread.class
+me/joeleoli/portal/independent/file/Config.class
+me/joeleoli/portal/independent/jedis/PortalSubscriptionHandler$1.class
+me/joeleoli/portal/independent/Portal.class
+me/joeleoli/portal/independent/log/Logger.class

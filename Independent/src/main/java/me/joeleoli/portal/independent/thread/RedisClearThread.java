@@ -1,13 +1,6 @@
 package me.joeleoli.portal.independent.thread;
 
 import me.joeleoli.portal.independent.Portal;
-import redis.clients.jedis.JedisCluster;
-
-import javax.sound.sampled.Port;
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
 
 public class RedisClearThread extends Thread{
 

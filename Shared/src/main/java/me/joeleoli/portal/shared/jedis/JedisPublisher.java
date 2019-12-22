@@ -21,10 +21,8 @@ public class JedisPublisher extends Thread {
 	public void run() {
 		while (true) {
 			if (!this.queue.isEmpty()) {
-				Jedis jedis = null;
 
-				try {
-					jedis = this.jedisSettings.getJedisPool().getResource();
+				try (Jedis jedis = this.jedisSettings.getJedisPool().getResource()) {
 
 					if (this.jedisSettings.hasPassword()) {
 						jedis.auth(this.jedisSettings.getPassword());
@@ -38,11 +36,6 @@ public class JedisPublisher extends Thread {
 						json.add("data", queue.getData());
 
 						jedis.publish(queue.getChannel(), json.toString());
-					}
-				}
-				finally {
-					if (jedis != null) {
-						jedis.close();
 					}
 				}
 			}

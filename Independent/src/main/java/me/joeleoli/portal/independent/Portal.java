@@ -53,19 +53,16 @@ public class Portal {
 
         new QueueThread().start();
         new BroadcastThread().start();
-        new RedisClearThread().start();
+        //new RedisClearThread().start();
 
         Logger.print("Portal is now running...");
 
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-            @Override
-            public void run() {
-                if (!settings.getJedisPool().isClosed()) {
-                    settings.getJedisPool().close();
-                    threads = false;
-                }
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            if (!settings.getJedisPool().isClosed()) {
+                settings.getJedisPool().close();
+                threads = false;
             }
-        });
+        }));
     }
 
     public static void main(String[] args) {

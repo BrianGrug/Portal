@@ -86,6 +86,24 @@ public class PortalSubscriptionHandler implements JedisSubscriptionHandler {
                     return;
                 }
 
+                ServerData hub = null;
+
+                for (String loopHub : Portal.getInstance().getConfig().getHubs()) {
+                    ServerData serverData = ServerData.getByName(loopHub);
+                    if (serverData != null) {
+                        if (hub == null || serverData.getOnlinePlayers() < hub.getOnlinePlayers()) {
+                            hub = serverData;
+                            if(queue.getServerData() == hub) {
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                if(queue.getServerData() == hub) {
+                    return;
+                }
+
                 JsonObject player = data.get("player").getAsJsonObject();
                 JsonObject rank = player.get("rank").getAsJsonObject();
 

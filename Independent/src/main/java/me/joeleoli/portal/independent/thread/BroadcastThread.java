@@ -8,7 +8,6 @@ import me.joeleoli.portal.shared.jedis.JedisAction;
 import me.joeleoli.portal.shared.jedis.JedisChannel;
 import me.joeleoli.portal.shared.queue.Queue;
 import me.joeleoli.portal.shared.queue.QueuePlayer;
-import me.joeleoli.portal.shared.server.ServerData;
 
 public class BroadcastThread extends Thread {
 

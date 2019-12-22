@@ -2,6 +2,7 @@ package me.joeleoli.portal.bukkit.thread;
 
 import me.joeleoli.portal.bukkit.Portal;
 import me.joeleoli.portal.shared.queue.Queue;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
@@ -10,7 +11,7 @@ public class ReminderThread extends Thread {
     @Override
     public void run() {
         while (true) {
-            for (Player player : Portal.getInstance().getServer().getOnlinePlayers()) {
+            for (Player player : Bukkit.getOnlinePlayers()) {
                 Queue queue = Queue.getByPlayer(player.getUniqueId());
 
                 if (queue != null) {
